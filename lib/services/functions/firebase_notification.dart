@@ -9,6 +9,6 @@ class FirbaseApi {
 
     final fcmtocken = await _firebaseMessaging.getToken();
 
-    print('TOKEN:' + fcmtocken.toString());
+    print('TOKEN:$fcmtocken');
   }
 }

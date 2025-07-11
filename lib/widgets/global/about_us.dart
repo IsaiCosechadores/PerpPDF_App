@@ -13,7 +13,7 @@ class aboutUs extends StatelessWidget {
         onTap: () {
           showBottomSheet(
             enableDrag: true,
-            sheetAnimationStyle: AnimationStyle(),
+            sheetAnimationStyle: const AnimationStyle(),
             context: context,
             builder: (context) {
               return GestureDetector(

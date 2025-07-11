@@ -8,7 +8,7 @@ import 'package:easy_pdf_viewer/easy_pdf_viewer.dart';
 class FolderPage extends StatefulWidget {
   final String path;
 
-  FolderPage({required this.path});
+  const FolderPage({super.key, required this.path});
 
   @override
   State<FolderPage> createState() => _FolderPageState();

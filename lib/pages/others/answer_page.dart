@@ -6,7 +6,7 @@ import 'package:user_auth_crudd10/pages/others/folderAns_page.dart';
 import 'package:user_auth_crudd10/services/providers/storage_ans_provider.dart';
 
 class AnswerPage extends StatefulWidget {
-  AnswerPage({super.key});
+  const AnswerPage({super.key});
 
   @override
   State<AnswerPage> createState() => _AnswerPageState();
@@ -195,7 +195,8 @@ class _AnswerPageState extends State<AnswerPage> {
                       child: GridView.builder(
                         itemCount: storageAnsProvider.ansItem.length,
                         padding: EdgeInsets.zero,
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        gridDelegate:
+                            const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,
                           childAspectRatio: 3 / 4,
                         ),

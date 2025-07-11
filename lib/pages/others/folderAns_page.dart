@@ -26,14 +26,14 @@ class _FolderAnsPageState extends State<FolderAnsPage> {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Get All Correct Solutions"),
+          title: const Text("Get All Correct Solutions"),
         ),
         body: FutureBuilder(
           future: Provider.of<StorageAnsProvider>(context, listen: false)
               .fetchAnsItems(widget.anspath),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
-              return Center(
+              return const Center(
                 child: CircularProgressIndicator(),
               );
             }
@@ -53,7 +53,7 @@ class _FolderAnsPageState extends State<FolderAnsPage> {
                           title: Text(
                             item.name.toUpperCase(),
                           ),
-                          trailing: Icon(
+                          trailing: const Icon(
                             Icons.arrow_forward_ios_rounded,
                           ),
                           onTap: () {
